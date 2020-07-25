@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>maven-web-project</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>maven-web-application</name>
+	<name>maven-web-project</name>
 
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>ZoomIT Corp</name>
+		<url>http://zoomitcorp.com/</url>
 	</organization>
 
 	<properties>
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.234.213.43:9000/</sonar.host.url>
+		<sonar.host.url>http://ublinux:9010/</sonar.host.url>
 		<!--<sonar.login>68a2a121435ecf5f0e65bd392845175651959746</sonar.login>  -->
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password> 
@@ -98,20 +98,20 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.233.17.232:9980/mithuntechnologies/repository/wallmart-releases/</url>
+	      <name>ZoomIT Corp Releases Nexus Repository</name>
+	      <url>http://ublinux:9020/repository/flipkart_releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.233.17.232:9980/mithuntechnologies/repository/wallmart-snapshot/</url>
+	      <name>ZoomIT Corp Snapshot Nexus Repository </name>
+	      <url>http://ublinux:9020/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-application</finalName>
+		<finalName>maven-web-project</finalName>
 		
 		<plugins>
 			<plugin>
@@ -131,7 +131,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/maven-web-project</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -144,7 +144,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>maven-web-project</wtpContextName>
 				</configuration>
 			</plugin>
 			
